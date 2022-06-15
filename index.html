@@ -23,7 +23,11 @@
                 {name: "Rio De Janeiro", utcOffset: -3, flag: "Brazil.png"},
                 {name: "Sydney", utcOffset: 11, flag: "Australia.png"},
                 {name: "Vancouver", utcOffset: -8, flag: "Canada.png"},
-                {name: "Beijing", utcOffset: 8, flag: "China.png"}
+                {name: "Beijing", utcOffset: 8, flag: "China.png"},
+                {name: "London", utcOffset: 1, flag: "United-Kingdom.png"},
+                {name: "Port Vila", utcOffset: 11, flag: "Vanuatu.png"},
+                {name: "Lagos", utcOffset: 1, flag: "Nigeria.png"},
+                {name: "Salta", utcOffset: -3, flag: "Argentina.png"}
             ];
             
             cities.sort();
@@ -55,7 +59,7 @@
             
             function displayWorldTime(){
                 var dt = new Date();
-                document.getElementById("local").innerHTML = "Local Time: " + dt.toLocaleTimeString();
+                document.getElementById("local").innerHTML = `<img id=" s" src="img/South-Africa.png"/>` + "   South African Local Time: " + dt.toLocaleTimeString();
                 
                 var output = `<table id="cities">`;
                 output += `<tr> 
